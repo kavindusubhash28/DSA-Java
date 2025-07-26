@@ -1,0 +1,12 @@
+public class CheckQueueEmpty {
+    public static void main(String[] args) {
+        MyQueue q = new MyQueue();
+        q.enqueue(5);
+        q.dequeue();
+
+        if (q.front == -1 || q.front > q.rear)
+            System.out.println("Queue is empty");
+        else
+            System.out.println("Queue is not empty");
+    }
+}
